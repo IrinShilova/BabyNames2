@@ -8,11 +8,7 @@ function OneName(props) {
   } else {
     babyColor = "nameGirl";
   }
-  return (
-    
-      <span class={babyColor}> {props.name} </span>
-    
-  );
+  return <span onClick={props.clickName} class={babyColor}> {props.name} </span>;
 }
 
 export default OneName;
